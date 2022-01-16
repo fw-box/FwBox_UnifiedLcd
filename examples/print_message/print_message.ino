@@ -19,7 +19,7 @@
 FwBox_UnifiedLcd UnifiedLcd(16, 2);
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(115200);
   Wire.begin(); // Join I2C bus
   UnifiedLcd.begin();
 }
