@@ -18,7 +18,7 @@ The library can detect LCD's IIC address automatically. Support the devices belo
 -----------
 
 # Wiring for ESP32:
-| LCD1602 IIC | ESP8266 |
+| LCD1602 IIC | ESP32 |
 |-----|-----|
 | VCC | 5V |
 | GND | GND |
@@ -33,7 +33,7 @@ The library can detect LCD's IIC address automatically. Support the devices belo
     FwBox_UnifiedLcd UnifiedLcd(16, 2);
 
     void setup() {
-      Serial.begin(9600);
+      Serial.begin(115200);
       Wire.begin(); // Join I2C bus
       UnifiedLcd.begin();
     }
